@@ -15,7 +15,7 @@ These are observations from one Audi MH2P/FPK virtual-cockpit installation. They
 
 - Audi HUD arrow/distance injection from Android Auto is not proven. Street/direction text can appear, but the arrow/distance region is controlled separately; BAP output alone has not established full HUD control.
 - Inset values, display role, and handover timing are vehicle/firmware-specific. Do not treat one tested profile as a universal default.
-- The working key-toggle artifact is a one-class replacement built against proprietary OEM classes and is intentionally **not** included. A clean, reviewable upstream interface or independently written adapter is needed before its implementation can be published here.
+- The original, reviewable key-toggle helper source is now included under `audi-mh2p/src/`. It still requires compatible lifecycle/key-dispatch call sites and the Audi DisplayManager composition methods in a current integration build; the proprietary/OEM classes and the exact vehicle JAR are not included.
 - No fifthBro source files, proprietary OEM code/binaries, vehicle captures, or personal logs were copied into this contribution.
 
 Contributors with an Audi MH2P/FPK unit are especially welcome to help with a clean layout-event API, a safe input bridge for the secondary AA display, and read-only evidence for HUD ownership. Please test only while parked; navigation display experiments must never be used as a safety-critical driving aid.
