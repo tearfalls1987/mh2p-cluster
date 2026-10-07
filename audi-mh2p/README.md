@@ -2,6 +2,18 @@
 
 This directory collects the **Audi-specific, publishable parts** of the C8 A7 field implementation. It is intentionally separate from Porsche defaults. The tested vehicle runs MH2P US AUG35 P2873, Audi car class `5_8`, native Android Auto, and an FPK virtual cockpit. The same results are **not** established for another firmware, VC, or car.
 
+## On-car result
+
+These photos were supplied by the vehicle owner and show the working AA map on the Audi VC in two cluster layouts. They show the VC display result—not proof that AA arrows or distance work on the windscreen HUD. The native scale indicator at the lower right remains visible and is an unresolved item.
+
+Full-width navigation layout, with the AA map and guidance card:
+
+![Android Auto map on the full-width Audi virtual cockpit](images/audi-vc-aa-full-width.jpg)
+
+Narrow-left navigation layout, with vehicle information occupying the right side:
+
+![Android Auto map in the narrow-left Audi virtual cockpit layout](images/audi-vc-aa-narrow-left.jpg)
+
 ## What is actually working on the test car
 
 | Behavior | Field result | Public ingredient |
